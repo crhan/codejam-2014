@@ -11,9 +11,7 @@ class Board
   end
 
   def to_s
-    @board.map do |row|
-      row.join(" ")
-    end.join("\n")
+    @board.map { |row| row.join(" ") }.join("\n")
   end
 end
 
